@@ -1,0 +1,208 @@
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Style header */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #dd5415;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Style tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #555;
+}
+
+/* Style sections */
+section {
+    padding: 50px 20px; /* Відступи для кожної секції */
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #000000;
+}
+#news a {
+    color: #ff0000;
+}
+/* Стилі для порад */
+#tips {
+    background-color: #f4f4f4; 
+    padding: 20px;
+    border-radius: 10px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#tips h2 {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+p b {
+    color: #e18018;
+}
+
+p.align-right {
+    text-align: right;
+}
+
+.highlighted-text {
+    font-size: 2rem; 
+    color: #e18018; 
+  }
+  
+
+#tips ol {
+    font-size: 1.2rem;
+    color: #e18018;
+}
+#tips ul {
+    font-size: 1.4rem;
+    color:   #A52A2A;
+    
+}
+
+
+#poll {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+/* Style articles */
+article {
+    margin-bottom: 30px;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #dd5415;
+    
+}
+
+article p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+/* Style table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+/* Style poll form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+input[type="submit"], select {
+font-size: 1.2em; 
+padding: 10px 20px; 
+border: none; 
+background-color: #e18018; 
+color: white; 
+box-shadow: 2px 2px 4px #888888;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .tabs {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .tab {
+      width: 100%;
+      padding: 15px 0px;
+    }
+}
