@@ -156,11 +156,15 @@
   
   <section id="info">
     <h2>Опитування</h2>
+    <h3>Запрошуємо вас взяти участь в опитуванні щодо якості спортивних та фітнес залів!</h3> 
+      <p> Метою нашого щорічного опитування є визначення найкращого спортивного та фітнес-залу в Україні. Ваша думка дуже важлива для нас, оскільки
+      вона допоможе зрозуміти, як ми можемо поліпшити послуги та зробити Ваше відвідування спортзалів України ще
+      комфортнішим та приємнішим.</p> 
     <form>
       <div class="text-left">
         <div class="question">
           <label for="q0">Ваш номер абонементу:</label><br>
-          <input type="number" id="q0" name="q0" min="1" max="10"><br>
+          <input type="number" id="q0" name="q0" min="1" max="100"><br>
         </div>
         <div class="question">
           <label for="q1">Уведіть назву залу:</label><br>
@@ -231,7 +235,7 @@
         </div>
         
 
-        <button type="submit" onclick="saveSurvey()">Зберегти</button>
+        <button type="submit" onclick="saveSurvey()">Зберегти</button><br>
       </div>
     </form>
 
@@ -241,13 +245,41 @@
       <button onclick="filter2()">Важливим є чистота</button>
     </div>
 
-
+<!-- part 2 -->
     <section class="et-slide" id="test-form-container">
       <div class="text-left" id="form-container">
          <!-- Код буде згенерований джава скриптом -->
       </div> 
     </section>
   
+
+  <!-- part3 -->
+  <h2>Підсвічник з емблеми</h2>
+  <svg width="400" height="200">
+    <!-- Підсвічник основа -->
+    <rect x="150" y="100" width="100" height="40" fill="blue" />
+    <rect x="170" y="60" width="60" height="40" fill="blue" />
+    
+    <!-- Свічки -->
+    <!-- Свічка 1 -->
+    <rect x="150" y="20" width="20" height="60" fill="blue" />
+    <circle cx="160" cy="20" r="20" fill="blue">
+      <animate attributeName="r" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Свічка 2 -->
+    <rect x="190" y="20" width="20" height="60" fill="blue" />
+    <circle cx="200" cy="20" r="20" fill="blue">
+      <animate attributeName="r" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Свічка 3 -->
+    <rect x="230" y="20" width="20" height="60" fill="blue" />
+    <circle cx="240" cy="20" r="20" fill="blue">
+      <animate attributeName="r" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
 
       
 
@@ -257,6 +289,7 @@
 </body>
 
 </html>
+
 
 <script>
   function saveSurvey() {
@@ -356,108 +389,108 @@
   }
 
   const testData = {
-    testName: ".NET Test",
+    testName: "Тест з комп'ютерних інформаційних мереж",
     questions: [
       {
-        question: "Які виняток не можна зупинити в блоці catch?",
+        question: "Блок керуючої інформації рівнів стеку протоколів TCP/IP називається:",
         answers: [
           {
-            answer: "StackOverflowException",
+            answer: "Заголовок",
             isCorrect: true,
           },
           {
-            answer: "ArgumentNullException",
+            answer: "Протокол",
             isCorrect: false,
           },
           {
-            answer: "DllNotFoundException",
+            answer: "Опис",
             isCorrect: false,
           },
           {
-            answer: "NullReferenceException",
+            answer: "Шапка",
             isCorrect: false,
           }
         ],
       },
       {
-        question: "Що таке Kestrel?",
+        question: "Топологія локальної мережі може бути:",
         answers: [
           {
-            answer: "Kestrel - це веб-сервер, що використовується для розгортання та запуску веб-додатків на платформі .NET Core.",
+            answer: "Зіркоподібною",
             isCorrect: true,
           },
           {
-            answer: "Kestrel - це фреймворк для створення ігор на мові програмування C#.",
+            answer: "Паралельною",
             isCorrect: false,
           },
           {
-            answer: "Kestrel - це база даних, яка використовується для зберігання конфігураційних даних в .NET Core",
+            answer: "Перехресною",
             isCorrect: true,
           },
           {
-            answer: "Kestrel - це редактор коду для розробки програм на мові програмування Java.",
+            answer: "Послідовною",
             isCorrect: false,
           }
         ],
       },
       {
-        question: "Що таке асинхронне програмування в .NET, і яке його призначення?",
+        question: "Що таке комп’ютерна мережа?",
         answers: [
           {
-            answer: "Асинхронне програмування - це підхід до розробки програм, в яких використовуються асинхронні операції для підвищення ефективності та масштабованості. Його призначення - забезпечення продуктивності та реагування програм на зовнішні події, такі як мережеві запити або робота з файлами.",
+            answer: "Комплекс програм, що організовують діалог з користувачами",
+            isCorrect: false,
+          },
+          {
+            answer: "Комплекс апаратних і програмних засобів, що реалізують обмін інформацією між ПК",
             isCorrect: true,
           },
           {
-            answer: "Асинхронне програмування - це методологія розробки програм, яка передбачає використання виключень для обробки асинхронних подій та помилок.",
+            answer: "Комплекс програмних засобів, що реалізують обмін інформацією між ПК",
             isCorrect: false,
           },
           {
-            answer: "Асинхронне програмування - це процес взаємодії програми з базою даних за допомогою асинхронних SQL запитів.",
-            isCorrect: false,
-          },
-          {
-            answer: "Асинхронне програмування - це методика розробки програм, що передбачає використання паралельних потоків для підвищення швидкодії.",
+            answer: "Комплекс апаратних засобів, що реалізують обмін інформацією між ПК",
             isCorrect: false,
           }
         ],
       },
       {
-        question: "Що таке Dependency Injection (DI) і яке його значення для .NET розробки?",
+        question: "Яку інформацію містить ІР-адреса?",
         answers: [
           {
-            answer: "Dependency Injection - це процес передачі залежностей в об'єкт зовнішніми засобами, зазвичай через конструктор, властивості або методи. У .NET це важливий принцип, що сприяє створенню розширюваних, тестових та зрозумілих програмних рішень.",
+            answer: "Адреса сайту",
+            isCorrect: false,
+          },
+          {
+            answer: "Адреса регіональної мережі",
+            isCorrect: false,
+          },
+          {
+            answer: "Адреса локальної мережі",
             isCorrect: true,
           },
           {
-            answer: "Dependency Injection - це техніка розробки програм, що передбачає використання інтерфейсів для зведення залежностей до мінімуму.",
-            isCorrect: false,
-          },
-          {
-            answer: "Dependency Injection - це підхід до створення мобільних додатків на платформі Android у середовищі .NET.",
-            isCorrect: false,
-          },
-          {
-            answer: "Dependency Injection - це методологія вирішення проблем із безпекою даних у програмах на мові програмування C#.",
+            answer: "Адреса комп’ютера",
             isCorrect: false,
           }
         ],
       },
       {
-        question: "Що таке аспектно-орієнтоване програмування (Aspect-Oriented Programming, AOP) і як воно використовується в .NET?",
+        question: "Як називалася перша глобальна комп'ютерна мережа?",
         answers: [
           {
-            answer: "Аспектно-орієнтоване програмування - це методологія, яка дозволяє відокремити крос-вирішені аспекти, такі як логування, аудит, транзакції, від основної бізнес-логіки програми. В .NET воно використовується за допомогою бібліотек, таких як PostSharp або Castle Windsor, які надають можливість внедрення аспектів у виконання програми.",
+            answer: "ARPANET",
             isCorrect: true,
           },
-          { answer: "Аспектно-орієнтоване програмування - це підхід до розробки, що передбачає використання виключень для обробки крос-вирішених аспектів.",
+          { answer: "WORLDNET",
             isCorrect: false,
           },
           {
-            answer: "Аспектно-орієнтоване програмування - це методика, яка ставить за мету забезпечити взаємодію різних компонентів програми за допомогою аспектів.",
+            answer: "INTERNET",
             isCorrect: false,
           },
           {
-            answer: "Аспектно-орієнтоване програмування - це підхід до розробки, що базується на використанні аспектів для моделювання бізнес-процесів.",
+            answer: "DECNET",
             isCorrect: false,
           }
         ],
