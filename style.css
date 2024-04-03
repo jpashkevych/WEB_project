@@ -206,3 +206,14 @@ footer p {
       padding: 15px 0px;
     }
 }
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filters button {
+    text-align: left;
+    margin-right: 10px;
+    margin-bottom: 20px
+  }
